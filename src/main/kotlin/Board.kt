@@ -6,7 +6,8 @@ import react.dom.div
 
 class Board : RComponent<RProps, RState>() {
     private fun RBuilder.renderSquare(i: Int) {
-        child(Square::class) {}
+        child(Square::class) {
+        }
     }
 
     override fun RBuilder.render() {

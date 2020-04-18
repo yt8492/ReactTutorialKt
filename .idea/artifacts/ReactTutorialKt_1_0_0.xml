@@ -1,6 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="ReactTutorialKt-1.0.0">
     <output-path>$PROJECT_DIR$/build/libs</output-path>
-    <root id="archive" name="ReactTutorialKt-1.0.0.jar" />
+    <root id="archive" name="ReactTutorialKt-1.0.0.jar">
+      <element id="module-output" name="com.yt8492.ReactTutorialKt.main" />
+    </root>
   </artifact>
 </component>
