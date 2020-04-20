@@ -1,3 +1,5 @@
+package model
+
 sealed class GameState {
     abstract val board: List<Player?>
 

@@ -1,3 +1,7 @@
+package component
+
+import model.GameState
+import model.Player
 import react.*
 import react.dom.div
 import react.dom.ol

@@ -1,3 +1,4 @@
+import component.Game
 import react.dom.render
 import kotlin.browser.document
 

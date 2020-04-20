@@ -1,3 +1,6 @@
+package component
+
+import model.GameState
 import react.*
 import react.dom.div
 
@@ -7,7 +10,7 @@ fun RBuilder.board(
 ) {
     val status = when (state) {
         is GameState.Playing -> {
-            "Next Player: ${state.turn}"
+            "Next model.Player: ${state.turn}"
         }
         is GameState.End -> {
             val winner = state.winner
