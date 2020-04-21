@@ -10,7 +10,7 @@ fun RBuilder.board(
 ) {
     val status = when (state) {
         is GameState.Playing -> {
-            "Next model.Player: ${state.turn}"
+            "Next Player: ${state.turn}"
         }
         is GameState.End -> {
             val winner = state.winner
@@ -27,21 +27,21 @@ fun RBuilder.board(
         }
         div(classes = "board-row") {
             (0..2).forEach { i ->
-                square(state.board[i]?.name) {
+                square(state.board[i]) {
                     onClick(i)
                 }
             }
         }
         div(classes = "board-row") {
             (3..5).forEach { i ->
-                square(state.board[i]?.name) {
+                square(state.board[i]) {
                     onClick(i)
                 }
             }
         }
         div(classes = "board-row") {
             (6..8).forEach { i ->
-                square(state.board[i]?.name) {
+                square(state.board[i]) {
                     onClick(i)
                 }
             }

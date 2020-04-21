@@ -1,13 +1,14 @@
 package component
 
 import kotlinx.html.js.onClickFunction
+import model.Player
 import org.w3c.dom.events.Event
 import react.*
 import react.dom.button
 
-fun RBuilder.square(value: String?, onClick: (Event) -> Unit) {
+fun RBuilder.square(player: Player?, onClick: (Event) -> Unit) {
     button(classes = "square") {
-        + (value ?: "")
+        + (player?.toString() ?: "")
         attrs.onClickFunction = onClick
     }
 }
