@@ -25,24 +25,13 @@ fun RBuilder.board(
         div(classes = "status") {
             + status
         }
-        div(classes = "board-row") {
-            (0..2).forEach { i ->
-                square(state.board[i]) {
-                    onClick(i)
-                }
-            }
-        }
-        div(classes = "board-row") {
-            (3..5).forEach { i ->
-                square(state.board[i]) {
-                    onClick(i)
-                }
-            }
-        }
-        div(classes = "board-row") {
-            (6..8).forEach { i ->
-                square(state.board[i]) {
-                    onClick(i)
+        (0..2).forEach { i ->
+            div(classes = "board-row") {
+                (0..2).forEach { j ->
+                    val index = i * 3 + j
+                    square(state.board[index]) {
+                        onClick(index)
+                    }
                 }
             }
         }
